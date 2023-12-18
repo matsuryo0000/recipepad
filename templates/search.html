@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container01">
+    <h1>食材選択</h1>
+    <h3>使う食材を✓してレシピ検索！</h3>
+    <form action="/result" method="POST">
+        <ol>
+            
+            {% for ingredient in data %}
+            <div class="form_all">
+            {{ingredient.item}}
+            <div class="form_group">
+                使い切る？
+                <input type="checkbox" name="use_up" value={{ingredient.item}},{{ingredient.id}} class="form__">Yes                
+                <input type="checkbox" name="use" value={{ingredient.item}} class="form__">No
+            </div>
+            </div>
+
+            
+            {% endfor %}
+            
+        </ol>
+        <!--nameタグを必ず"fav"にしてください！app.pyの方でname属性がfavのやつ拾ってます！-->
+        <input type="submit" value="レシピ検索" class="button">
+    </form>
+</div>
+<div class="container02">
+    <a class="btn-border-bottom" href="/">Top</a>
+    <a class="btn-border-bottom" href="/scan">食材登録</a>
+</div>
+{% endblock %}

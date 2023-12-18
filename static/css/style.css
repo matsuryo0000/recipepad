@@ -1,0 +1,151 @@
+body{
+    background-color:#feffb7;
+    margin:0 auto 0 auto;/*要素を左右中央に*/    
+}
+
+.container01{
+    position:relative;
+    margin:0 auto 0 auto;
+    margin-bottom: 6%;
+    width:40%;
+    height:auto;
+    color:#e0592a;
+}
+
+.container01 p{
+    position:absolute;
+    top:80%;
+    left:50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 0;    
+    margin: 0;
+    font-size:3.5em;
+    font-family: cursive;
+    color: #e0592a;
+    opacity: .8;
+}
+
+.container01 img{
+    width:100%;
+    height:100%;
+}
+
+.container02{
+    position:fixed;
+    left:0;
+    bottom:0;
+    text-align: center;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e0592a;       
+}
+
+
+.btn-border-bottom {
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 50px;
+    text-decoration: none;
+    color: #feffb7;  
+  }
+  
+  .btn-border-bottom:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    top:100%;
+    left:0;
+    background:#f9faad;
+    transition: .2s;
+  }
+  
+  .btn-border-bottom:hover:before {
+    top: -webkit-calc(100% - 3px);
+    top: calc(100% - 3px);
+  }
+
+/*食材登録画面操作*/
+
+.form_all{
+    display: flex;
+    margin: 3%;
+    
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+}
+
+.form_group{
+    background: #fae2ad;
+    box-shadow: 0px 0px 0px 5px #fae2ad;
+    border: dashed 2px #e0592a;
+    margin: 3%;
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+    border-radius: 20px; 
+}
+
+.form__input {
+    height: 2em;
+    width: 50%;
+    background-color: #fae2ad;
+    border: none;
+    transition: .4s;
+}
+
+
+
+.button{
+    font-size:1.2em;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    color: #e0592a;
+    background: #feffb7;
+    transition: .4s;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background: #e0592a;
+    color: #feffb7;
+}  
+
+/*食材選択画面操作*/
+
+
+
+
+
+
+
+
+
+
+.recipe_all{
+    display:flex;
+    flex-wrap:wrap;    
+    justify-content: space-around;
+    margin-bottom: 6%;
+}
+
+.recipe_item{
+    width:45%;
+    display:flex;
+    margin:20px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: aliceblue;
+}
+
+.recipe_item img{
+    height: 150px;
+    width:auto;
+}

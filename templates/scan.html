@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container01">
+    <h1>食材登録</h1>
+    <h3>使いたい食材の名前と賞味期限を記入して保存！</h3>
+
+    <form method="POST" action="/register" class="form">
+        <div class="form_group">
+        食材名：<input type="text" name="item" class="form__input">
+        </div>
+        <div class="form_group">
+        賞味期限：<input type="date" name="fdate" class="form__input">
+        </div>
+        
+        <input type="submit" value="保存" class="button">
+    </form>
+</div>
+<div class="container02">
+    <a class="btn-border-bottom" href="/">Top</a>
+    <a class="btn-border-bottom" href="/search">食材選択</a>
+</div>
+{% endblock %}

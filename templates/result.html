@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="recipe_all">
+{% for recipe in recipe_all %}
+<div class="recipe_item">
+    <img src="{{recipe[4]}}">
+    <ul>
+        <li>レシピ名:{{recipe[0]}}</h3> <!--{{変数名}}でPython側の変数をHTMLで表示-->
+        <li>材料:{{recipe[1]}}</li>
+        <li><a href="{{recipe[2]}}">レシピの詳細を見る</a></li>
+        <li>精度:{{recipe[3]}}%</li>
+    </ul>
+</div>
+{% endfor %}
+</div>
+<div class="container02">
+    <a class="btn-border-bottom" href="/">Top</a>
+    <a class="btn-border-bottom" href="/scan">食材登録</a>
+    <a class="btn-border-bottom" href="/search">食材選択</a>
+</div>
+{% endblock %}
