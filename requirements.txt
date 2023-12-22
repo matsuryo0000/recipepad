@@ -3,8 +3,7 @@ requests==2.31.0
 sqlalchemy==2.0.23
 transformers==4.32.1
 sentencepiece==0.1.99
---find-links
-https://download.pytorch.org/whl/torch_stable.html
+--find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.1.1+cpu
 scipy==1.11.4
 pandas==2.1.1
