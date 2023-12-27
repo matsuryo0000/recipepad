@@ -56,7 +56,7 @@ def recommend(query):
     sentences = []
 
     # CSVファイルのパスを指定
-    csv_file_path = "../dev01/static/csv/dev01.csv"
+    csv_file_path = "./static/csv/dev01.csv"
 
     # 読み込む列の名前を指定
     target_column_name = 'ingredients_text'
